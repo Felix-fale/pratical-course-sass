@@ -1,6 +1,44 @@
-body{
-    background: #000;
+@import "./libs/reset.scss";
+
+body {
+  background: #000;
 }
-p{
-    margin: 1rem;
+p {
+  margin: 1rem;
+}
+
+.table {
+  width: 100%;
+
+  td {
+    border: 1px solid #ccc;
+  }
+
+  thead {
+    background: {
+      color: #000;
+      repeat: no-repeat;
+    }
+    color: #fff;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    width: 90%;
+  }
+}
+
+.btn {
+  background: rgba(99, 122, 255);
+
+  &:hover {
+    background: rgb(27, 50, 183);
+  }
+
+  .theme-vert & {
+    background: green;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    padding: 10px;
+  }
 }
