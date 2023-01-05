@@ -68,17 +68,17 @@ p {
   }
 }
 
-.btn {
+.btn, .call-to-action {
   background: rgb(99, 122, 255);
 }
-.btn:hover {
+.btn:hover, .call-to-action:hover {
   background: rgb(27, 50, 183);
 }
-.theme-vert .btn {
+.theme-vert .btn, .theme-vert .call-to-action {
   background: green;
 }
 @media only screen and (max-width: 1200px) {
-  .btn {
+  .btn, .call-to-action {
     padding: 10px;
   }
 }
